@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'}
-urlsite = 'https://megatorrentshd1.org/lancamentos/'
+urlsite = 'https://megatorrentshd1.biz/lancamentos/'
 scrape_url = urlsite
 sb_get = requests.get(scrape_url, headers=mozhdr)
 soupeddataPrincipal = BeautifulSoup(sb_get.content, "html.parser")
